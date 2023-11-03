@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>COPY</h1>
+    <div class="container">
+        <div class="button" onclick="copyToClipBoard('å')">å</div>
+        <div class="button" onclick="copyToClipBoard('ä')">ä</div>
+        <div class="button" onclick="copyToClipBoard('ö')">ö</div>
+    </div>
+    <div class="container">
+        <div class="button" onclick="copyToClipBoard('Å')">Å</div>
+        <div class="button" onclick="copyToClipBoard('Ä')">Ä</div>
+        <div class="button" onclick="copyToClipBoard('Ö')">Ö</div>
+    </div>
+    <div class="container" style="margin-top: 10vh;">
+        <div class="button" onclick="copyToClipBoard('ñ')">ñ</div>
+        <div class="button" onclick="copyToClipBoard('ç')">ç</div>
+    </div>
+    <div class="container">
+        <div class="button" onclick="copyToClipBoard('Ñ')">Ñ</div>
+        <div class="button" onclick="copyToClipBoard('Ç')">Ç</div>
+    </div>
+</body>
+</html>
+<script>
+
+function copyToClipBoard(char) {
+    navigator.clipboard.writeText(char);
+}
+</script>
